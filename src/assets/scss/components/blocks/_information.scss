@@ -1,0 +1,43 @@
+.information__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.information__title {
+    font-family: "Larsseit-regular";
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 0.06em;
+    color: #22356F;
+    display: block;
+    margin-bottom: 234px;
+}
+
+.information__text {
+    font-family: Larsseit;
+    font-size: 36px;
+    line-height: 125%;
+    letter-spacing: -0.01em;
+    color: #22356F;
+    max-width: 676px;
+    font-family: "Larsseit-bold";
+    margin-bottom: 157px;
+}
+
+.information__help {
+    font-family: "Larsseit-bold";
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    line-height: 125%;
+    color: #FAB63E;
+}
+
+.information__text--light {
+    color: #62D0DF;
+}
+
+.information__box {
+    display: flex;
+    flex-direction: column;
+    padding: 104px 180px 50px 108px;
+}
