@@ -1,0 +1,40 @@
+.servises__title {
+    font-family: "Larsseit-regular";
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: rgba(34, 53, 111, 0.5);
+    margin: 0 auto;
+}
+
+.servises__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 120px;
+}
+
+.servises__square--pink {
+    background-color: #FFE2DE;
+}
+
+.servises__square--green {
+    background-color: #C4E769;
+}
+
+.servises__square--turquoise {
+    background-color: #62D0DF;
+}
+
+.servises__square--blou {
+    background-color: #0052C1;
+}
+
+.servises__text {
+    font-family: "Larsseit-bold";
+    font-size: 32px;
+    line-height: 34px;
+    letter-spacing: -0.006em;
+    color: #FFFFFF;
+}

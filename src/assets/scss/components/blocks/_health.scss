@@ -1,0 +1,29 @@
+.health__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.health__square--Physical {
+    background-color: #22356F;
+}
+
+.health__square--Mental {
+    background-color: #0052C1;
+}
+
+.health__square--Nutrition {
+    background-color: #76B58B;
+}
+
+.health__square--gymnastics {
+    background-color: #62D0DF;
+}
+
+.health__square--Crossfit {
+    background-color: #DEE1FF;
+}
+
+.health__square--Aerobicsquers {
+    background-color: #8F00FF;
+}
