@@ -1,0 +1,37 @@
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.menu__list {
+    font-family: "Larsseit-regular";
+    font-size: 14px;
+    line-height: 16px;
+    color: #22356F;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__item {
+    margin-right: 25px;
+}
+
+.menu__item:last-child {
+    margin-right: 0;
+}
+
+.menu-link {
+    font-size: 14px;
+    line-height: 16px;
+    font-family: "Larsseit-bold";
+    color: #22356F;
+}
+
+.menu-link:hover {
+    text-decoration: underline;
+}

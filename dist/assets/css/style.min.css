@@ -354,6 +354,91 @@ template {
   font-weight: 500;
   font-display: swap; }
 
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row; }
+
+.menu__list {
+  font-family: "Larsseit-regular";
+  font-size: 14px;
+  line-height: 16px;
+  color: #22356F;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.menu__item {
+  margin-right: 25px; }
+
+.menu__item:last-child {
+  margin-right: 0; }
+
+.menu-link {
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Larsseit-bold";
+  color: #22356F; }
+
+.menu-link:hover {
+  text-decoration: underline; }
+
+.conteiner {
+  height: 100vh;
+  background-color: #F4F9E2;
+  display: flex;
+  flex-direction: column; }
+
+.header__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 35px;
+  padding-bottom: 40px; }
+
+.header__btn {
+  background: #62D0DF;
+  border-radius: 50px;
+  width: 150px;
+  height: 50px;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Larsseit-bold";
+  cursor: pointer; }
+
+.header__top-iner {
+  display: flex; }
+
+.header__heading {
+  font-family: "Larsseit-bold";
+  font-size: 48px;
+  line-height: 53px;
+  letter-spacing: -0.035em;
+  color: #22356F;
+  max-width: 484px;
+  margin-bottom: 74px; }
+
+.header__text {
+  font-family: "Larsseit-regular";
+  font-size: 24px;
+  line-height: 42px;
+  color: #22356F;
+  max-width: 469px;
+  margin-bottom: 58px; }
+
+.header__box-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+
+.header__content {
+  margin-right: 140px; }
+
 .title {
   font-family: "Larsseit-regular";
   color: black;
@@ -553,6 +638,9 @@ template {
   line-height: 11px;
   letter-spacing: -0.006em;
   color: #FFFFFF; }
+
+.footer__mail {
+  color: #006DFF; }
 
 .servises__title {
   font-family: "Larsseit-regular";
