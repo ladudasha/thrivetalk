@@ -561,13 +561,22 @@ template {
   text-align: center;
   letter-spacing: 0.06em;
   color: rgba(34, 53, 111, 0.5);
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-bottom: 27px; }
 
 .servises__wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, 360px);
+  overflow-x: auto;
   margin-bottom: 120px; }
+
+.servises__square {
+  width: 100%;
+  display: flex; }
+
+.servises__square::before {
+  content: "";
+  padding-top: 100%; }
 
 .servises__square--pink {
   background-color: #FFE2DE; }
@@ -583,6 +592,7 @@ template {
 
 .servises__text {
   font-family: "Larsseit-bold";
+  max-width: 230px;
   font-size: 32px;
   line-height: 34px;
   letter-spacing: -0.006em;
@@ -590,8 +600,17 @@ template {
 
 .health__wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr; }
+  grid-template-columns: repeat(3, 480px);
+  overflow-x: auto;
+  margin-bottom: 20px; }
+
+.health__square {
+  width: 100%;
+  display: flex; }
+
+.health__square::before {
+  content: "";
+  padding-top: 100%; }
 
 .health__square--Physical {
   background-color: #22356F; }
@@ -610,5 +629,37 @@ template {
 
 .health__square--Aerobicsquers {
   background-color: #8F00FF; }
+
+.health__text {
+  font-family: "Larsseit-bold";
+  font-size: 32px;
+  line-height: 34px;
+  letter-spacing: -0.006em;
+  color: #FFFFFF; }
+
+.life__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 480px);
+  margin-bottom: 50px;
+  justify-items: center;
+  align-items: center; }
+
+.life__title {
+  font-family: "Larsseit-regular";
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: -0.03em;
+  color: #22356F;
+  margin-bottom: 35px; }
+
+.life__text {
+  font-family: "Larsseit-regular";
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: -0.03em;
+  color: rgba(34, 53, 111, 0.5); }
+
+.life__block {
+  padding: 60px 100px 50px 105px; }
 
 /*# sourceMappingURL=style.min.css.map */

@@ -1,7 +1,18 @@
 .health__wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 480px);
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.health__square {
+    width: 100%;
+    display: flex;
+}
+
+.health__square::before {
+    content: "";
+    padding-top: 100%;
 }
 
 .health__square--Physical {
@@ -26,4 +37,12 @@
 
 .health__square--Aerobicsquers {
     background-color: #8F00FF;
+}
+
+.health__text {
+    font-family: "Larsseit-bold";
+    font-size: 32px;
+    line-height: 34px;
+    letter-spacing: -0.006em;
+    color: #FFFFFF;
 }

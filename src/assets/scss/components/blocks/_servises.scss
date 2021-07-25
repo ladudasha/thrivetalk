@@ -1,40 +1,64 @@
-.servises__title {
-    font-family: "Larsseit-regular";
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: rgba(34, 53, 111, 0.5);
-    margin: 0 auto;
-}
-
-.servises__wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    margin-bottom: 120px;
-}
-
-.servises__square--pink {
-    background-color: #FFE2DE;
-}
-
-.servises__square--green {
-    background-color: #C4E769;
-}
-
-.servises__square--turquoise {
-    background-color: #62D0DF;
-}
-
-.servises__square--blou {
-    background-color: #0052C1;
-}
-
-.servises__text {
-    font-family: "Larsseit-bold";
-    font-size: 32px;
-    line-height: 34px;
-    letter-spacing: -0.006em;
-    color: #FFFFFF;
-}
+    .servises__title {
+        font-family: "Larsseit-regular";
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: rgba(34, 53, 111, 0.5);
+        margin: 0 auto;
+        margin-bottom: 27px;
+    }
+    
+    .servises__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 360px);
+        overflow-x: auto;
+        margin-bottom: 120px;
+        // @media screen and(min-width: 768px) {
+        //     grid-template-columns: repeat(2, 1fr);
+        // }
+        // @media screen and(min-width: 1175px) {
+        //     grid-template-columns: repeat(4, 1fr);
+        // }
+        // @media screen and(max-width: 1175px) {
+        //     grid-template-columns: repeat(4, 1fr);
+        // }
+        // @media screen and(max-width: 768px) {
+        //     grid-template-columns: repeat(4, 1fr);
+        // }
+    }
+    
+    .servises__square {
+        width: 100%;
+        display: flex;
+    }
+    
+    .servises__square::before {
+        content: "";
+        padding-top: 100%;
+    }
+    
+    .servises__square--pink {
+        background-color: #FFE2DE;
+    }
+    
+    .servises__square--green {
+        background-color: #C4E769;
+    }
+    
+    .servises__square--turquoise {
+        background-color: #62D0DF;
+    }
+    
+    .servises__square--blou {
+        background-color: #0052C1;
+    }
+    
+    .servises__text {
+        font-family: "Larsseit-bold";
+        max-width: 230px;
+        font-size: 32px;
+        line-height: 34px;
+        letter-spacing: -0.006em;
+        color: #FFFFFF;
+    }
