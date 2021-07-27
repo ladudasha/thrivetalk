@@ -8,8 +8,7 @@
 }
 
 .health__square {
-    width: 100%;
-    display: flex;
+    padding: 125px 220px 282px 104px;
 }
 
 .health__square--Physical {
@@ -36,7 +35,7 @@
     background-color: #8F00FF;
 }
 
-.health__text {
+.health__title {
     font-family: "Larsseit-bold";
     font-size: 32px;
     line-height: 34px;

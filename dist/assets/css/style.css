@@ -445,6 +445,7 @@ template {
 
 .header {
     position: relative;
+    background-color: #F4F9E2;
 }
 
 .header::before {
@@ -452,27 +453,26 @@ template {
     display: block;
     width: 807px;
     height: 544px;
-    background: #7daeb4;
+    background: #EDFDFF;
     border-radius: 312.159px;
     -webkit-transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
     transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 20px;
+    right: -115px;
 }
 
 .conteiner {
-    height: 100vh;
     background-color: #F4F9E2;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
+    padding: 27px 128px 86px 179px;
 }
 
 .header__top {
-    padding-top: 35px;
-    padding-bottom: 40px;
+    margin-bottom: 186px;
 }
 
 .logo__link {
@@ -493,13 +493,14 @@ template {
     line-height: 16px;
     font-family: "Larsseit-bold";
     cursor: pointer;
+    z-index: 1;
 }
 
 .header__top-iner {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .header__heading {
@@ -530,14 +531,43 @@ template {
     justify-content: center;
 }
 
-.header__content {
-    margin-right: 140px;
+.header__left {
     -ms-flex-positive: 1;
     flex-grow: 1;
 }
 
+.header__link-left {
+    margin-right: 28px;
+}
+
+.header__links {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.header__link {
+    width: 150px;
+    height: 50px;
+    font-family: "Larsseit-bold";
+    font-size: 16px;
+    line-height: 23px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    letter-spacing: 0.1em;
+    color: #F9B640;
+}
+
+.header__link:hover {
+    background: #F9B640;
+    color: #FFFFFF;
+}
+
 .header__img {
-    position: relative;
+    position: absolute;
 }
 
 .title {
@@ -760,9 +790,12 @@ template {
 .footer__content {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-align: center;
+    align-items: center;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 98px 40px 74px 65px;
+    max-width: 765px;
+    margin: 0 auto;
 }
 
 .footer__title {
@@ -809,7 +842,7 @@ template {
     color: #006DFF;
 }
 
-.servises__title {
+.servises__top {
     font-family: "Larsseit-regular";
     font-size: 16px;
     line-height: 19px;
@@ -852,7 +885,7 @@ template {
     background-color: #0052C1;
 }
 
-.servises__text {
+.servises__title {
     font-family: "Larsseit-bold";
     max-width: 230px;
     font-size: 32px;

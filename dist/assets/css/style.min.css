@@ -387,13 +387,29 @@ template {
   text-decoration: underline; }
 
 .header {
-  position: relative; }
+  position: relative;
+  background-color: #F4F9E2; }
+
+.header::before {
+  content: "";
+  display: block;
+  width: 807px;
+  height: 544px;
+  background: #EDFDFF;
+  border-radius: 312.159px;
+  transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
+  position: absolute;
+  top: 50px;
+  right: -140px; }
 
 .conteiner {
-  height: 100vh;
   background-color: #F4F9E2;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 27px 128px 86px 179px; }
+
+.header__top {
+  margin-bottom: 186px; }
 
 .logo__link {
   font-family: "Larsseit-bold";
@@ -416,7 +432,7 @@ template {
 
 .header__top-iner {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-between; }
 
 .header__heading {
   font-family: "Larsseit-bold";
@@ -441,7 +457,6 @@ template {
   justify-content: center; }
 
 .header__left {
-  margin-right: 140px;
   flex-grow: 1; }
 
 .header__link-left {
@@ -465,6 +480,11 @@ template {
 .header__link:hover {
   background: #F9B640;
   color: #FFFFFF; }
+
+.header__img {
+  position: absolute;
+  top: 20px;
+  right: 0; }
 
 .title {
   font-family: "Larsseit-regular";
@@ -680,7 +700,7 @@ template {
 .footer__mail {
   color: #006DFF; }
 
-.servises__title {
+.servises__top {
   font-family: "Larsseit-regular";
   font-size: 16px;
   line-height: 19px;
@@ -699,8 +719,7 @@ template {
   margin-bottom: 120px; }
 
 .servises__square {
-  width: 100%;
-  display: flex; }
+  padding: 95px 50px 210px 78px; }
 
 .servises__square--pink {
   background-color: #FFE2DE; }
@@ -714,7 +733,7 @@ template {
 .servises__square--blou {
   background-color: #0052C1; }
 
-.servises__text {
+.servises__title {
   font-family: "Larsseit-bold";
   max-width: 230px;
   font-size: 32px;
@@ -731,8 +750,7 @@ template {
   margin-bottom: 20px; }
 
 .health__square {
-  width: 100%;
-  display: flex; }
+  padding: 125px 220px 282px 104px; }
 
 .health__square--Physical {
   background-color: #22356F; }
@@ -752,12 +770,15 @@ template {
 .health__square--Aerobicsquers {
   background-color: #8F00FF; }
 
-.health__text {
+.health__title {
   font-family: "Larsseit-bold";
   font-size: 32px;
   line-height: 34px;
   letter-spacing: -0.006em;
   color: #FFFFFF; }
+
+.life {
+  overflow: hidden; }
 
 .life__wrapper {
   display: grid;

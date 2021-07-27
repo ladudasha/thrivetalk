@@ -1,3 +1,7 @@
+.life {
+    overflow: hidden;
+}
+
 .life__wrapper {
     display: grid;
     grid-template-columns: repeat(3, 480px);
