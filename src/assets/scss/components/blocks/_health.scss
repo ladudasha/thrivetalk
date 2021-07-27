@@ -1,6 +1,8 @@
 .health__wrapper {
     display: grid;
     grid-template-columns: repeat(3, 480px);
+    grid-template-rows: repeat(2, 480px);
+    justify-content: center;
     overflow-x: auto;
     margin-bottom: 20px;
 }
@@ -8,11 +10,6 @@
 .health__square {
     width: 100%;
     display: flex;
-}
-
-.health__square::before {
-    content: "";
-    padding-top: 100%;
 }
 
 .health__square--Physical {

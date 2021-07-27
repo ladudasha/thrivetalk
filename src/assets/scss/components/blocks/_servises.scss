@@ -12,30 +12,16 @@
     .servises__wrapper {
         display: grid;
         grid-template-columns: repeat(4, 360px);
+        grid-template-rows: 360px;
+        justify-content: center;
+        // grid-template-columns: repeat(4,1fr);
         overflow-x: auto;
         margin-bottom: 120px;
-        // @media screen and(min-width: 768px) {
-        //     grid-template-columns: repeat(2, 1fr);
-        // }
-        // @media screen and(min-width: 1175px) {
-        //     grid-template-columns: repeat(4, 1fr);
-        // }
-        // @media screen and(max-width: 1175px) {
-        //     grid-template-columns: repeat(4, 1fr);
-        // }
-        // @media screen and(max-width: 768px) {
-        //     grid-template-columns: repeat(4, 1fr);
-        // }
     }
     
     .servises__square {
         width: 100%;
         display: flex;
-    }
-    
-    .servises__square::before {
-        content: "";
-        padding-top: 100%;
     }
     
     .servises__square--pink {

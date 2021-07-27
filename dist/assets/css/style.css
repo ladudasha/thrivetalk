@@ -396,6 +396,150 @@ template {
   font-display: swap;
 }
 
+.menu {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.menu__list {
+    font-family: "Larsseit-regular";
+    font-size: 14px;
+    line-height: 16px;
+    color: #22356F;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.menu__item {
+    margin-right: 25px;
+}
+
+.menu__item:last-child {
+    margin-right: 0;
+}
+
+.menu-link {
+    font-size: 14px;
+    line-height: 16px;
+    font-family: "Larsseit-bold";
+    color: #22356F;
+}
+
+.menu-link:hover {
+    text-decoration: underline;
+}
+
+.header {
+    position: relative;
+}
+
+.header::before {
+    content: "";
+    display: block;
+    width: 807px;
+    height: 544px;
+    background: #7daeb4;
+    border-radius: 312.159px;
+    -webkit-transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
+    transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.conteiner {
+    height: 100vh;
+    background-color: #F4F9E2;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.header__top {
+    padding-top: 35px;
+    padding-bottom: 40px;
+}
+
+.logo__link {
+    font-family: "Larsseit-bold";
+    font-size: 24px;
+    line-height: 27px;
+    letter-spacing: -0.035em;
+    color: #62D0DF;
+}
+
+.header__btn {
+    background: #62D0DF;
+    border-radius: 50px;
+    width: 150px;
+    height: 50px;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: "Larsseit-bold";
+    cursor: pointer;
+}
+
+.header__top-iner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.header__heading {
+    font-family: "Larsseit-bold";
+    font-size: 48px;
+    line-height: 53px;
+    letter-spacing: -0.035em;
+    color: #22356F;
+    max-width: 484px;
+    margin-bottom: 74px;
+}
+
+.header__text {
+    font-family: "Larsseit-regular";
+    font-size: 24px;
+    line-height: 42px;
+    color: #22356F;
+    max-width: 469px;
+    margin-bottom: 58px;
+}
+
+.header__box-center {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.header__content {
+    margin-right: 140px;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.header__img {
+    position: relative;
+}
+
 .title {
     font-family: "Larsseit-regular";
     color: black;
@@ -452,6 +596,8 @@ template {
 .start__img {
     max-width: 525px;
     width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 .about {
@@ -531,6 +677,13 @@ template {
     -ms-flex-direction: column;
     flex-direction: column;
     padding: 104px 180px 50px 108px;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.information__img {
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 .smile__wrapper {
@@ -546,6 +699,13 @@ template {
 .smile__content {
     padding: 103px 240px 60px 180px;
     width: 100%;
+}
+
+.smile__img {
+    max-width: 480px;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 .smile__contact {
@@ -600,8 +760,6 @@ template {
 .footer__content {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 98px 40px 74px 65px;
@@ -647,6 +805,10 @@ template {
     color: #FFFFFF;
 }
 
+.footer__mail {
+    color: #006DFF;
+}
+
 .servises__title {
     font-family: "Larsseit-regular";
     font-size: 16px;
@@ -661,6 +823,9 @@ template {
 .servises__wrapper {
     display: grid;
     grid-template-columns: repeat(4, 360px);
+    grid-template-rows: 360px;
+    -ms-flex-pack: center;
+    justify-content: center;
     overflow-x: auto;
     margin-bottom: 120px;
 }
@@ -669,11 +834,6 @@ template {
     width: 100%;
     display: -ms-flexbox;
     display: flex;
-}
-
-.servises__square::before {
-    content: "";
-    padding-top: 100%;
 }
 
 .servises__square--pink {
@@ -704,6 +864,9 @@ template {
 .health__wrapper {
     display: grid;
     grid-template-columns: repeat(3, 480px);
+    grid-template-rows: repeat(2, 480px);
+    -ms-flex-pack: center;
+    justify-content: center;
     overflow-x: auto;
     margin-bottom: 20px;
 }
@@ -712,11 +875,6 @@ template {
     width: 100%;
     display: -ms-flexbox;
     display: flex;
-}
-
-.health__square::before {
-    content: "";
-    padding-top: 100%;
 }
 
 .health__square--Physical {
@@ -754,6 +912,8 @@ template {
 .life__wrapper {
     display: grid;
     grid-template-columns: repeat(3, 480px);
+    -ms-flex-pack: center;
+    justify-content: center;
     margin-bottom: 50px;
     justify-items: center;
     -ms-flex-align: center;

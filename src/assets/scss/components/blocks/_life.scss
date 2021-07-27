@@ -1,6 +1,8 @@
 .life__wrapper {
     display: grid;
     grid-template-columns: repeat(3, 480px);
+    // grid-template-rows: repeat(2, 240px);
+    justify-content: center;
     margin-bottom: 50px;
     justify-items: center;
     align-items: center;
