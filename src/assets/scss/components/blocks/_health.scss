@@ -1,14 +1,18 @@
+// .health {
+//     display: flex;
+// }
 .health__wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 480px);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 480px);
+    -ms-flex-pack: center;
     justify-content: center;
-    overflow-x: auto;
     margin-bottom: 20px;
+    max-width: 1440px;
 }
 
 .health__square {
-    padding: 125px 220px 282px 104px;
+    padding: 125px 0px 0px 104px;
 }
 
 .health__square--Physical {
@@ -41,4 +45,29 @@
     line-height: 34px;
     letter-spacing: -0.006em;
     color: #FFFFFF;
+    position: relative;
+}
+
+.health__title::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    display: block;
+    width: 340px;
+    height: 2px;
+    opacity: 0.5;
+    background: #f5f5f5;
+}
+
+.health__title::after {
+    content: "";
+    display: block;
+    width: 9px;
+    height: 9px;
+    background: #E9B730;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: -30px;
 }
