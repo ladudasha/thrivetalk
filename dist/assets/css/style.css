@@ -447,6 +447,7 @@ template {
     position: relative;
     background-color: #F4F9E2;
     overflow: hidden;
+    padding: 27px 0 86px 0;
 }
 
 .header::before {
@@ -464,13 +465,11 @@ template {
 }
 
 .conteiner {
-    background-color: #F4F9E2;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 27px 128px 86px 179px;
-    max-width: 1440px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -935,11 +934,12 @@ template {
 
 .health__wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 480px);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 480px);
     -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 20px;
+    max-width: 1440px;
 }
 
 .health__square {
@@ -1005,13 +1005,14 @@ template {
 
 .life__wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 480px);
+    grid-template-columns: repeat(3, 1fr);
     -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 50px;
     justify-items: center;
     -ms-flex-align: center;
     align-items: center;
+    max-width: 1440px;
 }
 
 .life__title {
