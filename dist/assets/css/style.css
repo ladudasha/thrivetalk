@@ -874,6 +874,7 @@ template {
     grid-template-rows: 360px;
     -ms-flex-pack: center;
     justify-content: center;
+    margin: 0 auto;
     margin-bottom: 120px;
     max-width: 1440px;
 }
@@ -940,6 +941,7 @@ template {
     justify-content: center;
     margin-bottom: 20px;
     max-width: 1440px;
+    margin: 0 auto;
 }
 
 .health__square {
@@ -1013,6 +1015,7 @@ template {
     -ms-flex-align: center;
     align-items: center;
     max-width: 1440px;
+    margin: 0 auto;
 }
 
 .life__title {
