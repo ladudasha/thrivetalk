@@ -1,28 +1,34 @@
 .about {
-    // max-width: 1440px;
     margin: 0 auto;
     padding-top: 150px;
-    // padding-left: 100px;
+    @media screen and (max-width: 1280px) {
+        padding-top: 80px;
+    }
 }
 
 .about__wrapper {
     display: flex;
     position: relative;
-    // justify-content: center;
+    flex-wrap: wrap;
+    @media screen and (max-width: 850px) {
+        flex-direction: column;
+    }
 }
 
 .about__title {
     font-size: 16px;
     line-height: 22px;
     color: #22356F;
-    position: absolute;
-    left: 100px;
+    @media screen and (max-width: 850px) {
+        margin-bottom: 30px;
+        margin-left: 0;
+        
+    }
 }
 
 .about__text {
     font-family: "Larsseit-medium";
     max-width: 592px;
-    // margin-left: 225px;
     color: #22356F;
     letter-spacing: 0.005em;
     -webkit-font-smoothing: antialiased;

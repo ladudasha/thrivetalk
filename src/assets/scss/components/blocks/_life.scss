@@ -1,12 +1,16 @@
 .life__wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
     margin-bottom: 50px;
-    justify-items: center;
-    align-items: center;
-    max-width: 1440px;
     margin: 0 auto;
+    @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    // @media screen and (max-width: 420px) {
+    //     grid-template-columns: repeat(6, 360px);
+    //     overflow-x: auto;
+    //     width:100%;
+    // }
 }
 
 .life__title {
@@ -28,4 +32,14 @@
 
 .life__block {
     padding: 60px 100px 50px 105px;
+    @media screen and (max-width: 1024px) {
+        padding: 60px 30px 50px 50px;
+    }
+    @media screen and (max-width: 525px) {
+        padding: 60px 30px 0px 50px;
+    }
+    @media screen and (max-width: 420px) {
+        padding: 60px 30px 45px 50px;
+    }
 }
+

@@ -16,18 +16,32 @@
             position: absolute;
             top: 50px;
             right: -140px;
-        }
-        
-        .conteiner {
-            display: flex;
-            flex-direction: column;
-            max-width: 1140px;
-            margin: 0 auto;
+            @media screen and (max-width: 1320px) {
+                width: 670px;
+                height: 370px;
+            }
+            @media screen and (max-width: 1110px) {
+                display: none;
+            }
+            
         }
         
         .header__top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             margin-bottom: 186px;
+            @media screen and (max-width: 1320px) {
+                margin-bottom: 130px;
+            }
+            @media screen and (max-width: 680px) {
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+            align-items: flex-end;
+            }
         }
+
         
         .logo__link {
             font-family: "Larsseit-bold";
@@ -46,16 +60,8 @@
             font-size: 14px;
             line-height: 16px;
             font-family: "Larsseit-bold";
-            // position: absolute;
-            // top: 0;
-            // right: 190px;
             cursor: pointer;
             z-index: 1;
-        }
-        
-        .header__top-iner {
-            display: flex;
-            justify-content: space-between;
         }
         
         .header__heading {
@@ -75,17 +81,9 @@
             color: #22356F;
             max-width: 469px;
             margin-bottom: 58px;
-        }
-        
-        .header__box-center {
-            // background: url(../../images/Mask Group.png);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .header__left {
-            flex-grow: 1;
+            @media screen and (max-width: 1110px) {
+                max-width: 100%;
+            }
         }
         
         .header__link-left {
@@ -118,4 +116,10 @@
             position: absolute;
             top: 20px;
             right: 0;
+            @media screen and (max-width: 1320px) {
+                max-width: 550px;
+            }
+            @media screen and (max-width: 1110px) {
+                display: none;
+            }
         }

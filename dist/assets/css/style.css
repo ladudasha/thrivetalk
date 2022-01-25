@@ -23,7 +23,6 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
 }
 
 ul {
@@ -396,6 +395,36 @@ template {
   font-display: swap;
 }
 
+.container {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1280px) {
+    .container {
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
 .menu {
     display: -ms-flexbox;
     display: flex;
@@ -464,17 +493,45 @@ template {
     right: -140px;
 }
 
-.conteiner {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    max-width: 1140px;
-    margin: 0 auto;
+@media screen and (max-width: 1320px) {
+    .header::before {
+        width: 670px;
+        height: 370px;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .header::before {
+        display: none;
+    }
 }
 
 .header__top {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
     margin-bottom: 186px;
+}
+
+@media screen and (max-width: 1320px) {
+    .header__top {
+        margin-bottom: 130px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .header__top {
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 20px;
+        -ms-flex-align: end;
+        align-items: flex-end;
+    }
 }
 
 .logo__link {
@@ -498,13 +555,6 @@ template {
     z-index: 1;
 }
 
-.header__top-iner {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
-
 .header__heading {
     font-family: "Larsseit-bold";
     font-size: 48px;
@@ -524,18 +574,10 @@ template {
     margin-bottom: 58px;
 }
 
-.header__box-center {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-
-.header__left {
-    -ms-flex-positive: 1;
-    flex-grow: 1;
+@media screen and (max-width: 1110px) {
+    .header__text {
+        max-width: 100%;
+    }
 }
 
 .header__link-left {
@@ -574,6 +616,18 @@ template {
     right: 0;
 }
 
+@media screen and (max-width: 1320px) {
+    .header__img {
+        max-width: 550px;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .header__img {
+        display: none;
+    }
+}
+
 .title {
     font-family: "Larsseit-regular";
     color: black;
@@ -583,12 +637,21 @@ template {
 }
 
 .start {
+    background-color: #62D0DF;
     margin: 0 auto;
+    position: relative;
 }
 
 .start__wrapper {
     display: -ms-flexbox;
     display: flex;
+}
+
+@media screen and (max-width: 1230px) {
+    .start__wrapper {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
 }
 
 .start__box {
@@ -599,8 +662,6 @@ template {
     flex-direction: column;
     -ms-flex-pack: center;
     justify-content: center;
-    background-color: #62D0DF;
-    padding-left: 180px;
 }
 
 .start__title {
@@ -622,6 +683,13 @@ template {
     -webkit-font-smoothing: antialiased;
 }
 
+@media screen and (max-width: 1230px) {
+    .start__text {
+        max-width: 100%;
+        font-size: 24px;
+    }
+}
+
 .start__text--bold {
     font-family: "Larsseit-bold";
     font-size: 24px;
@@ -629,11 +697,32 @@ template {
 
 .start__img {
     max-width: 525px;
+    height: 100%;
     width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 1230px) {
+    .start__img {
+        position: static;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .start__img {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .start__img {
+        display: none;
+    }
 }
 
 .about {
@@ -641,18 +730,38 @@ template {
     padding-top: 150px;
 }
 
+@media screen and (max-width: 1280px) {
+    .about {
+        padding-top: 80px;
+    }
+}
+
 .about__wrapper {
     display: -ms-flexbox;
     display: flex;
     position: relative;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 850px) {
+    .about__wrapper {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
 }
 
 .about__title {
     font-size: 16px;
     line-height: 22px;
     color: #22356F;
-    position: absolute;
-    left: 100px;
+}
+
+@media screen and (max-width: 850px) {
+    .about__title {
+        margin-bottom: 30px;
+        margin-left: 0;
+    }
 }
 
 .about__text {
@@ -674,6 +783,15 @@ template {
     justify-content: center;
 }
 
+@media screen and (max-width: 620px) {
+    .information__wrapper {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
 .information__title {
     font-family: "Larsseit-regular";
     font-size: 16px;
@@ -681,7 +799,19 @@ template {
     letter-spacing: 0.06em;
     color: #22356F;
     display: block;
-    margin-bottom: 234px;
+    margin-bottom: 235px;
+}
+
+@media screen and (max-width: 1280px) {
+    .information__title {
+        margin-bottom: 135px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .information__title {
+        margin-bottom: 100px;
+    }
 }
 
 .information__text {
@@ -693,6 +823,18 @@ template {
     max-width: 676px;
     font-family: "Larsseit-bold";
     margin-bottom: 157px;
+}
+
+@media screen and (max-width: 1280px) {
+    .information__text {
+        margin-bottom: 57px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .information__text {
+        font-size: 30px;
+    }
 }
 
 .information__help {
@@ -717,50 +859,118 @@ template {
     flex-grow: 1;
 }
 
+@media screen and (max-width: 1120px) {
+    .information__box {
+        padding: 104px 40px 50px 50px;
+    }
+}
+
 .information__img {
-    -o-object-fit: cover;
-    object-fit: cover;
-}
-
-.smile__wrapper {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background-color: #22356F;
-}
-
-.smile__content {
-    padding: 103px 240px 60px 180px;
-    width: 100%;
-}
-
-.smile__img {
     max-width: 480px;
     width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
 }
 
-.smile__contact {
-    max-width: 108px;
+@media screen and (max-width: 1024px) {
+    .information__img {
+        max-width: 380px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .information__img {
+        max-width: 220px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .information__img {
+        max-width: 82%;
+        margin-top: 100px;
+    }
+}
+
+.smile {
+    background-color: #22356F;
+    margin: 0 auto;
+    position: relative;
+}
+
+.smile__wrapper {
+    padding-top: 103px;
+    padding-bottom: 42px;
+}
+
+@media screen and (max-width: 1230px) {
+    .smile__wrapper {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        gap: 30px;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .smile__wrapper {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .smile__wrapper {
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+}
+
+.smile__img {
+    max-width: 480px;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 1230px) {
+    .smile__img {
+        position: static;
+        max-width: 40%;
+    }
+}
+
+.smile__link-white {
     font-family: "Larsseit-regular";
     font-size: 16px;
     line-height: 12px;
     letter-spacing: 0.06em;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .smile__title {
-    max-width: 704px;
     font-family: "Larsseit-bold";
     font-size: 64px;
     line-height: 94px;
     letter-spacing: -0.01em;
     color: #FFFFFF;
-    margin-bottom: 60px;
+    margin-bottom: 75px;
+    margin-top: 230px;
+}
+
+@media screen and (max-width: 1230px) {
+    .smile__title {
+        margin-top: 100px;
+        margin-bottom: 45px;
+        font-size: 55px;
+    }
 }
 
 .smile__text {
@@ -771,6 +981,13 @@ template {
     letter-spacing: -0.005em;
     color: #FFFFFF;
     margin-bottom: 70px;
+}
+
+@media screen and (max-width: 1230px) {
+    .smile__text {
+        max-width: 450px;
+        font-size: 36px;
+    }
 }
 
 .smile__link {
@@ -874,9 +1091,23 @@ template {
     grid-template-rows: 360px;
     -ms-flex-pack: center;
     justify-content: center;
-    margin: 0 auto;
     margin-bottom: 120px;
-    max-width: 1440px;
+}
+
+@media screen and (max-width: 1024px) {
+    .servises__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .servises__wrapper {
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(4, 360px);
+        overflow-x: auto;
+        width: 100%;
+    }
 }
 
 .servises__square {
@@ -889,7 +1120,8 @@ template {
     top: -30px;
     left: -30px;
     display: block;
-    width: 255px;
+    max-width: 255px;
+    width: 100%;
     height: 2px;
     opacity: 0.5;
     background: #f5f5f5;
@@ -903,7 +1135,7 @@ template {
     background: #E9B730;
     border-radius: 50%;
     position: absolute;
-    top: 0;
+    top: 16px;
     left: -30px;
 }
 
@@ -925,7 +1157,6 @@ template {
 
 .servises__title {
     font-family: "Larsseit-bold";
-    max-width: 230px;
     font-size: 32px;
     line-height: 34px;
     letter-spacing: -0.006em;
@@ -940,12 +1171,32 @@ template {
     -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 20px;
-    max-width: 1440px;
-    margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .health__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .health__wrapper {
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(6, 1fr);
+        overflow-x: auto;
+        width: 100%;
+    }
 }
 
 .health__square {
     padding: 125px 0px 0px 104px;
+}
+
+@media screen and (max-width: 1024px) {
+    .health__square {
+        padding: 94px 50px 155px 61px;
+    }
 }
 
 .health__square--Physical {
@@ -987,7 +1238,8 @@ template {
     top: -30px;
     left: -30px;
     display: block;
-    width: 340px;
+    max-width: 340px;
+    width: 100%;
     height: 2px;
     opacity: 0.5;
     background: #f5f5f5;
@@ -1001,21 +1253,21 @@ template {
     background: #E9B730;
     border-radius: 50%;
     position: absolute;
-    top: 0;
+    top: 16px;
     left: -30px;
 }
 
 .life__wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    -ms-flex-pack: center;
-    justify-content: center;
     margin-bottom: 50px;
-    justify-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    max-width: 1440px;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .life__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .life__title {
@@ -1037,4 +1289,22 @@ template {
 
 .life__block {
     padding: 60px 100px 50px 105px;
+}
+
+@media screen and (max-width: 1024px) {
+    .life__block {
+        padding: 60px 30px 50px 50px;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .life__block {
+        padding: 60px 30px 0px 50px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .life__block {
+        padding: 60px 30px 45px 50px;
+    }
 }

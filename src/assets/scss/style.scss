@@ -1,6 +1,22 @@
 @import './abstracts/normalize.scss';
 @import './abstracts/fonts';
-@import './style2.scss';
+.container {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    @media screen and (max-width: 1280px) {
+        padding: 0 40px;
+    }
+    @media screen and (max-width: 768px) {
+        padding: 0 50px;
+    }
+    @media screen and (max-width: 576px) {
+        padding: 0 40px;
+    }
+    @media screen and (max-width: 360px) {
+        padding: 0 20px;
+    }
+}
 @import './components/menu';
 @import './layout/header';
 @import './components/title';
