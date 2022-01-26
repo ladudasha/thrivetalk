@@ -1,9 +1,10 @@
 @import './abstracts/normalize.scss';
 @import './abstracts/fonts';
 .container {
-    max-width: 1080px;
+    max-width: 1440px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 20px;
     @media screen and (max-width: 1280px) {
         padding: 0 40px;
     }

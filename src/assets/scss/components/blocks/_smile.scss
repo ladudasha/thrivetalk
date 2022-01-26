@@ -1,38 +1,40 @@
 .smile {
-    background-color: #22356F;
-    margin: 0 auto;
     position: relative;
 }
 .smile__wrapper {
-    padding-top: 103px;
-    padding-bottom: 42px;
-    @media screen and (max-width: 1230px) {
-        display: flex;
-        align-items: center;
-        gap: 30px;
-        justify-content: center;
-    }
-    @media screen and (max-width: 880px) {
-        flex-direction: column;
-    }
-    @media screen and (max-width: 600px) {
-        align-items: flex-start;
-    }
+    background-color: #22356F;
+    display: flex;
+    justify-content: space-between;
+.smile__box {
+    display: flex;
+    flex-grow: 1;
+}
+.smile__box-into {
+    margin: 0 auto;
+}
+    // @media screen and (max-width: 1230px) {
+    //     display: flex;
+    //     align-items: center;
+    //     gap: 30px;
+    //     justify-content: center;
+    // }
+    // @media screen and (max-width: 880px) {
+    //     flex-direction: column;
+    // }
+    // @media screen and (max-width: 600px) {
+    //     align-items: flex-start;
+    // }
 }
 
 
 .smile__img {
     max-width: 480px;
-    height: 100%;
     width: 100%;
     object-fit: cover;
-    position: absolute;
-    top: 0;
-    right: 0;
-    @media screen and (max-width: 1230px) {
-        position: static;
-        max-width: 40%;
-    }
+    // @media screen and (max-width: 1230px) {
+    //     position: static;
+    //     max-width: 40%;
+    // }
 }
 
 .smile__link-white {
@@ -53,11 +55,11 @@
     color: #FFFFFF;
     margin-bottom: 75px;
     margin-top: 230px;
-    @media screen and (max-width: 1230px) {
-        margin-top: 100px;
-        margin-bottom: 45px;
-        font-size: 55px;
-    }
+    // @media screen and (max-width: 1230px) {
+    //     margin-top: 100px;
+    //     margin-bottom: 45px;
+    //     font-size: 55px;
+    // }
 }
 
 .smile__text {
@@ -68,11 +70,11 @@
     letter-spacing: -0.005em;
     color: #FFFFFF;
     margin-bottom: 70px;
-    @media screen and (max-width: 1230px) {
-        max-width: 450px;
-        font-size: 36px;
+    // @media screen and (max-width: 1230px) {
+    //     max-width: 450px;
+    //     font-size: 36px;
 
-    }
+    // }
 }
 
 .smile__link {

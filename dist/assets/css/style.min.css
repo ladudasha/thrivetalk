@@ -354,9 +354,10 @@ template {
   font-display: swap; }
 
 .container {
-  max-width: 1080px;
+  max-width: 1440px;
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 20px; }
   @media screen and (max-width: 1280px) {
     .container {
       padding: 0 40px; } }
@@ -521,22 +522,28 @@ template {
   font-size: 36px;
   letter-spacing: -0.006em; }
 
-.start {
-  background-color: #62D0DF;
-  margin: 0 auto;
-  position: relative; }
-
 .start__wrapper {
-  display: flex; }
-  @media screen and (max-width: 1230px) {
+  display: flex;
+  background-color: #62D0DF;
+  flex-wrap: wrap; }
+  @media screen and (max-width: 1265px) {
     .start__wrapper {
-      flex-direction: column; } }
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+  @media screen and (max-width: 720px) {
+    .start__wrapper {
+      padding-left: 20px;
+      padding-right: 20px; } }
 
 .start__box {
-  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  flex-grow: 1; }
+
+.start__box-into {
+  margin: 0 auto; }
 
 .start__title {
   max-width: 223px;
@@ -554,10 +561,10 @@ template {
   font-size: 16px;
   line-height: 35px;
   -webkit-font-smoothing: antialiased; }
-  @media screen and (max-width: 1230px) {
+  @media screen and (max-width: 1265px) {
     .start__text {
-      max-width: 100%;
-      font-size: 24px; } }
+      max-width: 665px;
+      font-size: 20px; } }
 
 .start__text--bold {
   font-family: "Larsseit-bold";
@@ -565,46 +572,39 @@ template {
 
 .start__img {
   max-width: 525px;
-  height: 100%;
   width: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  right: 0; }
-  @media screen and (max-width: 1230px) {
-    .start__img {
-      position: static;
-      max-width: 100%; } }
-  @media screen and (max-width: 680px) {
-    .start__img {
-      height: 100%; } }
-  @media screen and (max-width: 430px) {
-    .start__img {
-      display: none; } }
+  object-fit: cover; }
 
 .about {
   margin: 0 auto;
   padding-top: 150px; }
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 980px) {
     .about {
       padding-top: 80px; } }
+  @media screen and (max-width: 720px) {
+    .about {
+      padding-left: 20px;
+      padding-right: 20px; } }
 
 .about__wrapper {
   display: flex;
   position: relative;
   flex-wrap: wrap; }
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 980px) {
     .about__wrapper {
-      flex-direction: column; } }
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; } }
 
 .about__title {
   font-size: 16px;
   line-height: 22px;
-  color: #22356F; }
-  @media screen and (max-width: 850px) {
+  color: #22356F;
+  margin-left: 106px; }
+  @media screen and (max-width: 980px) {
     .about__title {
-      margin-bottom: 30px;
-      margin-left: 0; } }
+      margin-left: 0;
+      margin-bottom: 30px; } }
 
 .about__text {
   font-family: "Larsseit-medium";
@@ -619,11 +619,8 @@ template {
 
 .information__wrapper {
   display: flex;
-  justify-content: center; }
-  @media screen and (max-width: 620px) {
-    .information__wrapper {
-      flex-direction: column;
-      align-items: center; } }
+  align-items: center;
+  flex-wrap: wrap; }
 
 .information__title {
   font-family: "Larsseit-regular";
@@ -633,12 +630,6 @@ template {
   color: #22356F;
   display: block;
   margin-bottom: 235px; }
-  @media screen and (max-width: 1280px) {
-    .information__title {
-      margin-bottom: 135px; } }
-  @media screen and (max-width: 1024px) {
-    .information__title {
-      margin-bottom: 100px; } }
 
 .information__text {
   font-family: Larsseit;
@@ -649,12 +640,6 @@ template {
   max-width: 676px;
   font-family: "Larsseit-bold";
   margin-bottom: 157px; }
-  @media screen and (max-width: 1280px) {
-    .information__text {
-      margin-bottom: 57px; } }
-  @media screen and (max-width: 1024px) {
-    .information__text {
-      font-size: 30px; } }
 
 .information__help {
   font-family: "Larsseit-bold";
@@ -669,60 +654,33 @@ template {
 .information__box {
   display: flex;
   flex-direction: column;
-  padding: 104px 180px 50px 108px;
   flex-grow: 1; }
-  @media screen and (max-width: 1120px) {
-    .information__box {
-      padding: 104px 40px 50px 50px; } }
+
+.information__box-into {
+  margin: 0 auto; }
 
 .information__img {
   max-width: 480px;
   width: 100%;
   object-fit: cover; }
-  @media screen and (max-width: 1024px) {
-    .information__img {
-      max-width: 380px; } }
-  @media screen and (max-width: 768px) {
-    .information__img {
-      max-width: 220px; } }
-  @media screen and (max-width: 620px) {
-    .information__img {
-      max-width: 82%;
-      margin-top: 100px; } }
 
 .smile {
-  background-color: #22356F;
-  margin: 0 auto;
   position: relative; }
 
 .smile__wrapper {
-  padding-top: 103px;
-  padding-bottom: 42px; }
-  @media screen and (max-width: 1230px) {
-    .smile__wrapper {
-      display: flex;
-      align-items: center;
-      gap: 30px;
-      justify-content: center; } }
-  @media screen and (max-width: 880px) {
-    .smile__wrapper {
-      flex-direction: column; } }
-  @media screen and (max-width: 600px) {
-    .smile__wrapper {
-      align-items: flex-start; } }
+  background-color: #22356F;
+  display: flex;
+  justify-content: space-between; }
+  .smile__wrapper .smile__box {
+    display: flex;
+    flex-grow: 1; }
+  .smile__wrapper .smile__box-into {
+    margin: 0 auto; }
 
 .smile__img {
   max-width: 480px;
-  height: 100%;
   width: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  right: 0; }
-  @media screen and (max-width: 1230px) {
-    .smile__img {
-      position: static;
-      max-width: 40%; } }
+  object-fit: cover; }
 
 .smile__link-white {
   font-family: "Larsseit-regular";
@@ -740,11 +698,6 @@ template {
   color: #FFFFFF;
   margin-bottom: 75px;
   margin-top: 230px; }
-  @media screen and (max-width: 1230px) {
-    .smile__title {
-      margin-top: 100px;
-      margin-bottom: 45px;
-      font-size: 55px; } }
 
 .smile__text {
   font-family: "Larsseit-medium";
@@ -754,10 +707,6 @@ template {
   letter-spacing: -0.005em;
   color: #FFFFFF;
   margin-bottom: 70px; }
-  @media screen and (max-width: 1230px) {
-    .smile__text {
-      max-width: 450px;
-      font-size: 36px; } }
 
 .smile__link {
   font-family: "Larsseit-bold";
@@ -868,19 +817,12 @@ template {
 
 .servises__wrapper {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 360px);
   grid-template-rows: 360px;
-  -ms-flex-pack: center;
-  justify-content: center;
   margin-bottom: 120px; }
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1435px) {
     .servises__wrapper {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 1fr 1fr; } }
-  @media screen and (max-width: 680px) {
-    .servises__wrapper {
-      grid-template-rows: 1fr;
-      grid-template-columns: repeat(4, 360px);
+      align-self: flex-start;
       overflow-x: auto;
       width: 100%; } }
 
@@ -932,27 +874,24 @@ template {
 
 .health__wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 480px);
   grid-template-rows: repeat(2, 480px);
-  -ms-flex-pack: center;
   justify-content: center;
-  margin-bottom: 20px; }
-  @media screen and (max-width: 1024px) {
+  overflow-x: auto;
+  width: 100%; }
+  @media screen and (max-width: 1435px) {
     .health__wrapper {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, 1fr); } }
-  @media screen and (max-width: 680px) {
+      justify-content: flex-start; } }
+  @media screen and (max-width: 980px) {
     .health__wrapper {
-      grid-template-rows: 1fr;
-      grid-template-columns: repeat(6, 1fr);
-      overflow-x: auto;
-      width: 100%; } }
+      grid-template-columns: repeat(3, 400px);
+      grid-template-rows: repeat(2, 400px); } }
 
 .health__square {
   padding: 125px 0px 0px 104px; }
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 980px) {
     .health__square {
-      padding: 94px 50px 155px 61px; } }
+      padding: 80px 0px 0px 80px; } }
 
 .health__square--Physical {
   background-color: #22356F; }
@@ -1003,14 +942,25 @@ template {
   top: 16px;
   left: -30px; }
 
+@media screen and (max-width: 720px) {
+  .life {
+    padding-left: 20px;
+    padding-right: 20px; } }
+
 .life__wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 480px);
+  grid-template-rows: repeat(2, 240px);
   margin-bottom: 50px;
-  margin: 0 auto; }
-  @media screen and (max-width: 768px) {
+  justify-content: center; }
+  @media screen and (max-width: 1300px) {
     .life__wrapper {
-      grid-template-columns: repeat(2, 1fr); } }
+      grid-template-columns: repeat(2, 335px);
+      grid-template-rows: repeat(3, 240px); } }
+  @media screen and (max-width: 670px) {
+    .life__wrapper {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr); } }
 
 .life__title {
   font-family: "Larsseit-regular";
@@ -1025,18 +975,16 @@ template {
   font-size: 16px;
   line-height: 25px;
   letter-spacing: -0.03em;
+  max-width: 245px;
   color: rgba(34, 53, 111, 0.5); }
 
 .life__block {
-  padding: 60px 100px 50px 105px; }
-  @media screen and (max-width: 1024px) {
+  padding: 60px 0px 0px 105px; }
+  @media screen and (max-width: 1300px) {
     .life__block {
-      padding: 60px 30px 50px 50px; } }
-  @media screen and (max-width: 525px) {
+      padding: 35px 0px 0px 40px; } }
+  @media screen and (max-width: 670px) {
     .life__block {
-      padding: 60px 30px 0px 50px; } }
-  @media screen and (max-width: 420px) {
-    .life__block {
-      padding: 60px 30px 45px 50px; } }
+      padding: 20px 0px 0px 20px; } }
 
 /*# sourceMappingURL=style.min.css.map */

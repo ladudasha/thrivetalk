@@ -2,6 +2,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
     }
     
     .servises__top {
@@ -17,28 +18,20 @@
     
     .servises__wrapper {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 360px);
         grid-template-rows: 360px;
-        -ms-flex-pack: center;
-        justify-content: center;
         margin-bottom: 120px;
-        @media screen and (max-width: 1024px) {
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 1fr 1fr;
-            
-        }
-        @media screen and (max-width: 680px) {
-            grid-template-rows:  1fr;
-            grid-template-columns: repeat(4, 360px);
+
+        @media screen and (max-width: 1435px) {
+            align-self: flex-start;
             overflow-x: auto;
-            width:100%;
+            width: 100%;            
         }
     }
     
     .servises__square {
         padding: 95px 65px 210px 78px;
     }
-   
     
     .servises__square ::before {
         content: "";
