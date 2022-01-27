@@ -1,7 +1,20 @@
+.information {
+    @media screen and (max-width: 1200px) {
+        padding-top: 40px;
+    }
+}
+
 .information__wrapper {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    @media screen and (max-width: 1200px) {
+            flex-direction: column-reverse;
+        }
+        @media screen and (max-width: 860px) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
 }
 
 .information__title {
@@ -12,6 +25,9 @@
     color: #22356F;
     display: block;
     margin-bottom: 235px;
+    @media screen and (max-width: 1200px) {
+        margin-bottom: 80px;
+    }
 }
 
 .information__text {
@@ -23,6 +39,10 @@
     max-width: 676px;
     font-family: "Larsseit-bold";
     margin-bottom: 157px;
+    @media screen and (max-width: 1200px) {
+        margin-bottom: 80px;
+        max-width: 800px;
+    }
 }
 
 .information__help {
@@ -51,4 +71,8 @@
     max-width: 480px;
     width: 100%;
     object-fit: cover;
+    @media screen and (max-width: 1200px) {
+        margin-top: 50px;
+        max-width: 380px;
+    }
 }

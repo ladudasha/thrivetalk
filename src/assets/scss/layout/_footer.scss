@@ -37,9 +37,12 @@
     align-items: center;
     max-width: 765px;
     margin: 0 auto;
-    padding: 98px 40px 75px 40px;
+    padding: 98px 40px 74px 40px;
     @media screen and (max-width: 1130px) {
         align-items: flex-start;
+    }
+    @media screen and (max-width: 720px) {
+    padding: 20px;
     }
 }
 
@@ -60,6 +63,9 @@
     color: rgba(34, 53, 111, 0.5);
     @media screen and (max-width: 1130px) {
         font-size: 18px;
+    }
+    @media screen and (max-width: 680px) {
+        font-size: 14px;
     }
 }
 

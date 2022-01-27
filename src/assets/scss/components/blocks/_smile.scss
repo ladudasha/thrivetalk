@@ -5,36 +5,34 @@
     background-color: #22356F;
     display: flex;
     justify-content: space-between;
+    flex-grow: 1;
+    @media screen and (max-width: 910px) {
+        flex-direction: column;
+        align-items: center;
+    }
+    @media screen and (max-width: 860px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
 .smile__box {
     display: flex;
     flex-grow: 1;
+    
 }
 .smile__box-into {
     margin: 0 auto;
+    padding-top: 103px;
+    padding-bottom: 43px;
 }
-    // @media screen and (max-width: 1230px) {
-    //     display: flex;
-    //     align-items: center;
-    //     gap: 30px;
-    //     justify-content: center;
-    // }
-    // @media screen and (max-width: 880px) {
-    //     flex-direction: column;
-    // }
-    // @media screen and (max-width: 600px) {
-    //     align-items: flex-start;
-    // }
-}
-
 
 .smile__img {
     max-width: 480px;
     width: 100%;
     object-fit: cover;
-    // @media screen and (max-width: 1230px) {
-    //     position: static;
-    //     max-width: 40%;
-    // }
+    @media screen and (max-width: 1130px) {
+        max-width: 380px;
+    }
 }
 
 .smile__link-white {
@@ -55,11 +53,9 @@
     color: #FFFFFF;
     margin-bottom: 75px;
     margin-top: 230px;
-    // @media screen and (max-width: 1230px) {
-    //     margin-top: 100px;
-    //     margin-bottom: 45px;
-    //     font-size: 55px;
-    // }
+    @media screen and (max-width: 1130px) {
+        margin-top: 80px;
+    }
 }
 
 .smile__text {
@@ -70,11 +66,9 @@
     letter-spacing: -0.005em;
     color: #FFFFFF;
     margin-bottom: 70px;
-    // @media screen and (max-width: 1230px) {
-    //     max-width: 450px;
-    //     font-size: 36px;
-
-    // }
+    @media screen and (max-width: 1130px) {
+        max-width: 380px;
+    }
 }
 
 .smile__link {
