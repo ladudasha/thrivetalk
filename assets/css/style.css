@@ -559,6 +559,11 @@ template {
     z-index: 1;
 }
 
+.header__main {
+    display: -ms-flexbox;
+    display: flex;
+}
+
 .header__heading {
     font-family: "Larsseit-bold";
     font-size: 48px;
@@ -615,21 +620,8 @@ template {
 }
 
 .header__img {
-    position: absolute;
-    top: 20px;
-    right: 0;
-}
-
-@media screen and (max-width: 1320px) {
-    .header__img {
-        max-width: 550px;
-    }
-}
-
-@media screen and (max-width: 1110px) {
-    .header__img {
-        display: none;
-    }
+    width: 1126px;
+    height: 760px;
 }
 
 .title {
