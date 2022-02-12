@@ -579,7 +579,7 @@ template {
     font-size: 24px;
     line-height: 42px;
     color: #22356F;
-    max-width: 469px;
+    max-width: 670px;
     margin-bottom: 58px;
 }
 
@@ -620,8 +620,21 @@ template {
 }
 
 .header__img {
-    width: 1126px;
-    height: 760px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+@media screen and (max-width: 1320px) {
+    .header__img {
+        max-width: 550px;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .header__img {
+        display: none;
+    }
 }
 
 .title {
